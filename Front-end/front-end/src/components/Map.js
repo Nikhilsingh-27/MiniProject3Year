@@ -9,7 +9,7 @@ const Map = () => {
    
     const getTechnologies = async () => {
         try {
-            let result = await fetch('http://localhost:5000/map');
+            let result = await fetch('https://miniproject3yearbackend.onrender.com/map');
             result = await result.json();
             setTechnologies(result);
         } catch (error) {
@@ -26,7 +26,7 @@ const Map = () => {
 
         if (key) {
             try {
-                let result = await fetch(`http://localhost:5000/search/${key}`);
+                let result = await fetch(`https://miniproject3yearbackend.onrender.com/search/${key}`);
                 result = await result.json();
                 setTechnologies(result);
             } catch (error) {
