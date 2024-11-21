@@ -1,0 +1,235 @@
+/* Parent container (navbar container) */
+.navbar {
+  display: flex; /* Enable flexbox */
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Vertically center the items */
+  background-color: #80C4E9;
+  padding: 10px 20px; /* Padding around the navbar */
+  width: 100%; /* Ensure the navbar spans the full width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better appearance */
+  position: fixed; /* Fix the navbar to the top */
+  top: 0; /* Position it at the top of the viewport */
+  left: 0; /* Ensure it spans from the left */
+  z-index: 1000; /* Keep it above other elements */
+}
+
+/* Navigation menu list */
+.nav-ul {
+
+  background-color: #80C4E9;
+  display: flex; /* Flex layout for menu items */
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 9px; /* Remove default padding */
+  justify-content: flex-end;
+}
+
+/* Individual menu items */
+.nav-ul li {
+  margin-left: 20px; /* Add space between menu items */
+}
+
+/* Menu links */
+.nav-ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-ul li a:hover {
+  background-color: #62AEDD; /* Change background color on hover */
+}
+
+
+/* Optional: For animations (keeping the reduced-motion preference) */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* .footer{
+position: absolute;
+bottom: 0;
+text-align: center;
+width: 100%;
+background-color: skyblue;
+} */
+
+
+/* HomePage.css */
+
+.home-page {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f7fc;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #80C4E9;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  padding: 10px 20px;
+  background-color: white;
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+.hero-btn:hover {
+  background-color: #45a049;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Features Section */
+.features {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 30%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f4f7fc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+}
+.hero-image img {
+  margin-left: 90px;
+  width: 80%; /* Set a fixed width (50% of the container width) */
+  max-width: 600px; /* Limit the maximum width to 600px */
+  height: auto; /* Keep the aspect ratio intact */
+  border-radius: 10px; /* Apply border radius for rounded corners */
+}
+
+
+
+.inputbox{
+  display:block;
+  margin:25px;
+  padding:7px;
+  width:300px;
+  border:1px solid skyblue;
+}
+.techcomp{
+  margin-left: 30%;
+  
+}
+.appbutton{
+  margin:25px;
+  padding:10px;
+  width:150px;
+  background-color: skyblue;
+  border: 1px solid;
+  cursor:pointer;
+}
+.search-tech{
+  width:200px;
+  margin-left:83%;
+  height:40px;
+  border:1px solid skyblue;
+  padding-left: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
