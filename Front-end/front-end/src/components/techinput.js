@@ -32,7 +32,7 @@ const Techinput = () => {
         if (image) formData.append('image', image);
 
         try {
-            const response = await axios.post('https://miniproject3yearbackend.onrender.com/techinput', formData, {
+            const response = await axios.post('https://miniproject3yearbackend.onrender.com', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
